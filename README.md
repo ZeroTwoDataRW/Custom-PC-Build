@@ -1,42 +1,44 @@
 # Custom Workstation Build
 
-A high-performance workstation built on the AMD AM5 platform. I chose the components for compatibility, thermals, power delivery, and performance, then set it up to dual-boot Windows 11 Pro and Ubuntu Linux.
+A high-performance workstation built on the AMD AM5 platform, with components chosen for compatibility, thermals, power delivery, and long-term reliability. Dual-boots Windows 11 Pro and Ubuntu Linux.
 
-<img src="f8ac2f4e-40e2-4f90-9df7-aa3986d8c57c.jpg" width="400" alt="Build photo">
+<p align="center">
+  <img src="images/finished-build.jpg" width="400" alt="Finished build">
+</p>
 
 ## Parts List
 | Component | Part |
 |---|---|
 | CPU | AMD Ryzen 7 7800X3D (8 cores / 16 threads, 3D V-Cache) |
 | Motherboard | ASRock X870E Taichi |
-| Memory | 32 GB DDR5 [speed, e.g. 6000 MT/s] |
-| GPU | [model] |
+| Memory | 32 GB DDR5-6000 |
+| GPU | XFX AMD Radeon RX 9070 XT |
 | Storage | [model and capacity] |
-| Power Supply | [model and wattage] |
-| CPU Cooler | [model] |
-| Case | [model] |
+| CPU Cooler | Lian Li HydroShift [size, e.g. 360mm] AIO liquid cooler |
+| Power Supply | Corsair RM1000 1000W, fully modular |
+| Case | Phanteks NV5 |
 
-## Why These Parts
-- **7800X3D:** its large 3D V-Cache gives strong performance in cache-sensitive workloads.
-- **X870E Taichi:** PCIe 5.0, USB4, and strong VRM power delivery leave room for upgrades.
-- [Any other choices, e.g. PSU headroom or cooling]
+## Design Considerations
+I approached this build the way I'd approach a customer solution: start with the workload, then pick hardware that fits it.
 
-## Firmware & OS Setup
+- **Workload fit:** I chose the 7800X3D because its 3D V-Cache suits cache-sensitive workloads. Picking a processor for the use case, rather than for headline specs, was the central decision.
+- **Thermal design:** the Lian Li HydroShift AIO and the Phanteks NV5's dual-chamber layout keep heat-producing parts apart and airflow clean. That keeps temperatures stable under sustained load, so the system holds its performance instead of throttling.
+- **Power budgeting:** the 1000W Corsair PSU leaves wide headroom above peak system draw, so power delivery stays stable under load and tuning and there's room for future upgrades.
+- **Cable management:** the fully modular PSU means only the cables the system needs are installed, which cuts clutter and improves airflow in the dual-chamber case.
+- **Expandability and I/O:** the X870E Taichi's PCIe 5.0, USB4, and strong VRM design allow the system to grow without replacing the platform.
+- **Compatibility:** I checked CPU, motherboard, memory, GPU clearance, and cooler fitment against one another before buying, to avoid integration issues at assembly.
+
+## Firmware & OS Configuration
 - UEFI with Secure Boot enabled
-- Dual-boot: Windows 11 Pro and Ubuntu Linux [version]
+- Dual-boot: Windows 11 Pro and Ubuntu Linux
 - Virtualization-based security and Hyper-V enabled
+- DDR5-6000 memory running at rated speed via EXPO profile
 
-## Performance Tuning
-- [e.g. PBO / Curve Optimizer settings]
-- [e.g. EXPO memory profile]
-- Stress-tested for stability with [tools, e.g. Cinebench, OCCT, MemTest86]
-
-## Results
-| Test | Before | After tuning |
-|---|---|---|
-| [Cinebench R23 multi-core] | [score] | [score] |
-| [Max temp under load] | [°C] | [°C] |
+## Performance Tuning & Validation
+- Tuned CPU performance using [PBO / Curve Optimizer, whatever you used]
+- Stress-tested for stability and thermals with [tools, e.g. Cinebench, OCCT, MemTest86]
 
 ## What I Learned
-- [e.g. troubleshooting boot order with Secure Boot and dual-boot]
-- [e.g. balancing performance against thermals]
+- Thermals and power delivery matter as much as raw specs. A system is only as reliable as its weakest constraint.
+- Working through firmware, Secure Boot, and dual-boot configuration taught me how hardware, firmware, and operating systems interact.
+- Validating stability after every change matters before trusting a system with real workloads.
