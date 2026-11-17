@@ -11,7 +11,7 @@ A high-performance workstation built on the AMD AM5 platform, with components ch
 | Motherboard | ASRock X870E Taichi |
 | Memory | 32 GB DDR5-6000 |
 | GPU | XFX AMD Radeon RX 9070 XT |
-| Storage | [model and capacity] |
+| Storage | WD 1TB M.2 NVMe SSD (OS & applications) + WD 4TB HDD (bulk storage) |
 | CPU Cooler | Lian Li HydroShift [size, e.g. 360mm] AIO liquid cooler |
 | Power Supply | Corsair RM1000 1000W, fully modular |
 | Case | Phanteks NV5 |
@@ -25,6 +25,7 @@ I approached this build the way I'd approach a customer solution: start with the
 - **Cable management:** the fully modular PSU means only the cables the system needs are installed, which cuts clutter and improves airflow in the dual-chamber case.
 - **Expandability and I/O:** the X870E Taichi's PCIe 5.0, USB4, and strong VRM design allow the system to grow without replacing the platform.
 - **Compatibility:** I checked CPU, motherboard, memory, GPU clearance, and cooler fitment against one another before buying, to avoid integration issues at assembly.
+- **Tiered storage:** a fast NVMe SSD for the operating systems and applications, paired with a high-capacity HDD for bulk data, balances speed, capacity, and cost.
 
 ## Firmware & OS Configuration
 - UEFI with Secure Boot enabled
