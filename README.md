@@ -2,7 +2,7 @@
 
 A high-performance workstation built on the AMD AM5 platform, with components chosen for compatibility, thermals, power delivery, and long-term reliability. Dual-boots Windows 11 Pro and Ubuntu Linux.
 
-<img src="images/finished-build.jpg" width="400" alt="Finished build">
+<img src="85d9df48-4d96-4702-a982-8252c5f92f3f.jpg" width="400" alt="Build photo">
 
 ## Parts List
 | Component | Part |
