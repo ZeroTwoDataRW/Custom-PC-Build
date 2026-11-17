@@ -34,7 +34,7 @@ I approached this build the way I'd approach a customer solution: start with the
 - DDR5-6000 memory running at rated speed via EXPO profile
 
 ## Performance Tuning & Validation
-- Tuned CPU performance using [PBO / Curve Optimizer, whatever you used]
+- Tuned CPU performance using [PBO / Curve Optimizer]
 - Stress-tested for stability and thermals with [tools, e.g. Cinebench, OCCT, MemTest86]
 
 ## What I Learned
